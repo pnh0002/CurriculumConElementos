@@ -1,0 +1,18 @@
+table,th,td{
+    border: 1px solid black; 
+    text-align: center;
+}
+td{
+    align-content: center;
+    padding: 10px;
+    
+}
+#Historia{
+    align-content: center;
+    padding-left: 50px;
+    padding-right: 50px; 
+    align-items: stretch;
+}
+#Encabezado,#horas,#Descanso,#dia{
+    background-color: lightblue;
+}

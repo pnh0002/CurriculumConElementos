@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilosElementos.css">
+
+</head>
+<body>
+    <h1 id="Encabezado">
+        
+        <img src="img/OIP.jfif" alt="mi cara" id="miCara">
+        <p id="Nombre"><b><i>Pablo Nieto Hurtado</i></b></p>
+        
+    </h1>
+    <!--<hr>-->
+
+     
+    <main>
+        <section id = "Presentacion">
+            <div id="Menu" >
+                <!--<ul>-->
+                    <b>Menú</b>
+                        <ul id="listaMenu">
+                            <li><a href="https://medac.instructure.com/" target="_self">Medac (Aula Virtual)</a></li>
+                            <li><a href="#Datos_Personales" target="_blank">Datos Personales</a></li>
+                            <li><a href="#Educacion" target="_self">Formación</a></li>
+                            <li><a href="#Habilidades" target="_blank">Habilidades</a></li>
+                            <li><a href="https://github.com/pnh0002/Curriculum.git" target ="_self">Código en GitHub</a></li>
+                            <li><a href="index.html" target ="_self">Página de Inicio</a></li>
+                            <li><a href ="formulario.html" target="_self">Formulario</a></li>
+                            <li><a href="horario.html"target="_self">Horario Personal</a></li>
+                            <li><a href="https://github.com/pnh0002/CurriculumFormulario2/raw/main/ExplicacionDescarga.pdf" class="boton" download="ExplicacionDescarga.pdf"> Descarga pdf GitHub</a></li>
+                        </ul>
+                <!--</ul>-->
+         
+             </div>
+    <!--<hr>-->
+    
+            <div id="Datos_Personales">
+        
+                <!--<ul>-->
+                    <b>Datos Personales</b>
+                        <ul id="listaDatos">
+                            <li><p><b>Nombre Completo:</b> Pablo</p></li>
+                            <li><p><b>Apellidos: </b>Nieto Hurtado</p></li>
+                            <li><p><b>Dirección de Correo electrónico Medac: </b>pnh0002@alu.medac.es</p></li>
+                        </ul>
+                <!--</ul>-->
+           
+
+            </div>
+        <!--<hr>-->
+    
+            <div id="Educacion">
+                <ol>
+                    <li><b><i>Formación autodidacta</i></b></li>
+                        <ol style="list-style-type:circle;" id="listaAutodidacta">
+                            <li>Iniciación en JavaScript (15 horas)</li>
+                            <li>Curso avanzado de Java (120 horas)</li>
+                            <li>Inciciación en SQL (24 horas)</li>
+                        </ol>
+                    <li><b><i>Formación Profesional</i></b></li>    
+                        <ol style="list-style-type:circle;" id="listaProfesional">
+                            <li>Grado Superior de Desarrollo de Aplicaciones Multiplataforma (DAM)</li>
+
+                        </ol>    
+
+        
+                </ol>
+            </div>
+        <!--<hr>-->
+
+            <div id="Habilidades">
+                <ul>
+                    <h2><b><i>Habilidades</i></b></h2>
+                        <ul id="listaHabilidades">
+                            <li>Conocimientos intermedios en Java Orientado a Objetos (POO)</li>
+                            <li>Conocimientos básicos sobre base de datos (Entidad/Relación)</li>
+                            <li>Conocimientos básicos de programación en SQL</li>
+                            <li>Conocimientos intermedios de estructura y diseño de redes</li>
+                            <li>Conocimientos intermedios sobre HTML y CSS</li>
+                        </ul>
+                </ul>
+
+
+            </div>
+        <!--<hr>-->
+            <!--<div id="imagen">
+            
+                <p><iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.6559334522185!2d-3.788306224264129!3d37.79810237197942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd7dec3dd20ad%3A0x4fad82fdbe189c8!2sMEDAC%20Aventura%20Formaci%C3%B3n%20Profesional!5e0!3m2!1ses!2ses!4v1728892106111!5m2!1ses!2ses" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                <img id="img" src="img/medac.png" alt="Logo de Medac">
+
+            </div>-->
+        </section>
+        <section id = "Descripcion">
+            <div class = "Elementos">
+                <!--Aquí debe ir los elementos de video y audio, junto con unas preguntas interactivas respecto estas pistas de video y audio-->
+                <h1 id = "audio">Pista de Audio</h1>
+                <audio id="pistaaudio" src="interactivos/sonido (1).mp3" controls preload loop 
+                type = "audio/mpeg"></audio>
+                <details>
+                    <summary id="p1">¿Qué tipo de etiqueta se usará para poner una pista de audio?</summary>
+                    <p id = "r1">Mediante el uso de la etiqueta "audio"</p>
+                </details>
+                <details>
+                    <summary id="p2">¿Se puede poner una pista de audio que se repita en bucle?</summary>
+                    <p id = "r2">En las pistas de audio, también se puede poner el archivo <br> para que se reproduzca en bucle con la función <b>loop</b></p>
+                </details>
+                <details>
+                    <summary id = "p3">¿Dónde se deben poner los archivos de audio y video dentro del HTML?</summary>
+                    <p id = "r3">Las pistas deben introducirse dentro de una archivo local <br> identificativo para luego declararlo en el "src" respectivo</p>
+                </details>
+                <h1 id = "audio">Pista de Video</h1>
+                <video id="pistavideo" src="interactivos/pelicula (1).webm" controls preload loop autoplay
+                poster="portada.jpg"></video>
+                <details>
+                    <summary id="p1">¿Qué etiqueta se usa para implementar un video?</summary>
+                    <p id="r1">Para poder añadir un video en HTML vamos a necesitar usar <br> la etiqueta "video"</p>
+                </details>
+                <details>
+                    <summary id="p2">¿Tiene algún tipo de límite las líneas de código en un archivo CSS?</summary>
+                    <p id="r2">No, los archivos CSS no tienen ningún tipo de límite de <br> líneas de código.</p>
+                </details>
+                <details>
+                    <summary id="p3">¿Qué significan las siglas CSS?</summary>
+                    <p id="r3">El significado de las siglas <b>CSS</b> es <b>Cascading Style Sheet</b></p>
+                </details>
+
+            </div>
+
+        </section>    
+
+    </main>
+</body>
+</html>
